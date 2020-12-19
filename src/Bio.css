@@ -1,0 +1,26 @@
+.bio {
+  padding: 30px;
+  padding-right: 60px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 70px;
+}
+
+.b-img > img {
+  width: 250px;
+  border-radius: 50%;
+  justify-content: flex-end;
+}
+
+.b-img {
+  flex: 0.2;
+  padding: 20px;
+}
+
+.info {
+  flex: 0.8;
+  padding: 20px;
+  color: white;
+}

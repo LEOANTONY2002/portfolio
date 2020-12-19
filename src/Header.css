@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between !important;
+  background-color: black;
+  width: 100vw;
+  height: 70px;
+  align-items: center;
+  flex: 1;
+  position: fixed;
+}
+
+.img > img {
+  width: 3.2rem;
+  border-radius: 50%;
+  padding: 1rem 0;
+  object-fit: contain;
+}
+
+.navs {
+  display: flex;
+  flex: 0.4;
+  justify-content: space-around;
+  color: grey;
+}
+.navs > p {
+  font-size: 15px;
+  font-weight: 520;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.8;
+}
+
+.navs > p:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
