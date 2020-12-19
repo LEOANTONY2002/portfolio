@@ -43,7 +43,7 @@ function Projects() {
         <Proj
           title="Portfolio"
           src="https://leoantony2002.web.app"
-          gsrc="https://github.com/LEOANTONY2002/Portfolio"
+          gsrc="https://github.com/LEOANTONY2002/portfolio"
         />
         <p className="continue">To be continued.....</p>
       </div>
