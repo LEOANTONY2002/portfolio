@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import LA from "./images/LA.jpg";
 
@@ -9,9 +10,15 @@ function Header() {
         <img src={LA} alt="LA" />
       </div>
       <div className="navs">
-        <p>HOME</p>
-        <p>RESUME</p>
-        <p>CONTACT</p>
+        <Link to="/">
+          <p className="p">HOME</p>
+        </Link>
+        <Link to="/resume">
+          <p className="p">RESUME</p>
+        </Link>
+        <Link to="/">
+          <p className="p">CONTACT</p>
+        </Link>
       </div>
     </div>
   );
