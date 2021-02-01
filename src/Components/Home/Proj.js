@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
-import web from "./images/web.png";
-import gh from "./images/gh.png";
+import web from "../images/web.png";
+import gh from "../images/gh.png";
 
 function Proj({ title, src, gsrc }) {
   const truncate = (str, n) => {

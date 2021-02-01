@@ -1,10 +1,10 @@
 import React from "react";
-import Proj from "./Components/Home/Proj";
+import Proj from "./Proj";
 import "./Projects.css";
 import react from "./logo.svg";
-import firebase from "./images/firebase.png";
-import JS from "./images/JS.png";
-import pwa from "./images/pwaw.png";
+import firebase from "../images/firebase.png";
+import JS from "../images/JS.png";
+import pwa from "../images/pwaw.png";
 
 function Projects() {
   return (

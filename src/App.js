@@ -1,10 +1,11 @@
 import "./App.css";
-import Header from "./Header";
-import Projects from "./Projects";
-import Bio from "./Bio";
-import Apps from "./Apps";
+import Header from "./Components/Home/Header";
+import Projects from "./Components/Home/Projects";
+import Bio from "./Components/Home/Bio";
+import Apps from "./Components/Home/Apps";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import Resume from "./Resume";
+import Resume from "./Components/Resume/Resume";
+import Splash from "./Components/Home/Splash";
 
 function App() {
   return (
@@ -23,7 +24,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <div style={{ height: "20px" }}></div>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import "./Bio.css";
-import LEO from "./images/leo.jpg";
-import ph from "./images/ph.png";
-import inl from "./images/in.png";
-import gm from "./images/gm.png";
-import gh from "./images/gh.png";
+import LEO from "../images/leo.jpg";
+import ph from "../images/ph.png";
+import inl from "../images/in.png";
+import gm from "../images/gm.png";
+import gh from "../images/gh.png";
 
 function Bio() {
   return (
@@ -13,7 +13,9 @@ function Bio() {
         <img src={LEO} alt="LEO" />
       </div>
       <div className="info">
-        <h1>LEO ANTONY</h1>
+        <h1>
+          <span>LEO</span>ANTONY
+        </h1>
         <h4>"Learning has no limit"</h4>
         <hr />
         <p>
@@ -23,20 +25,32 @@ function Bio() {
         <div className="details">
           <div className="det">
             <img src={gh} alt="" />
-            <a href="https://www.github.com/LEOANTONY2002" target="_blank">
+            <a
+              href="https://www.github.com/LEOANTONY2002"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>github.com/LEOANTONY2002</p>
             </a>
           </div>
           <div className="det">
             <img src={inl} alt="" />
-            <a href="https://www.linkedin.com/in/leo-antony" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/leo-antony"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>linkedin.com/in/leo-antony</p>
             </a>
           </div>
 
           <div className="det">
             <img src={gm} alt="" />
-            <a href="https://www.leoantony20025@gmail.com" target="_blank">
+            <a
+              href="https://www.leoantony20025@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>leoantony20025@gmail.com</p>
             </a>
           </div>

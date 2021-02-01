@@ -1,10 +1,8 @@
 import React from "react";
 import SingleApp from "./SingleApp";
-import netflix from "./images/netflix-icon.png";
-import DT from "./images/DT.jpeg";
-import medry from "./images/medry.png";
-import android from "./images/android.png";
-import LAred from "./images/LAred.jpeg";
+import DT from "../images/DT.jpeg";
+import android from "../images/android.png";
+import LAred from "../images/LAred.jpeg";
 
 function Apps() {
   return (

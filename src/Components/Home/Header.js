@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import LA from "./images/LA.jpg";
+import LA from "../images/LA.jpg";
 
 function Header() {
   return (
@@ -15,9 +15,6 @@ function Header() {
         </Link>
         <Link to="/resume">
           <p className="p">RESUME</p>
-        </Link>
-        <Link to="/">
-          <p className="p">CONTACT</p>
         </Link>
       </div>
     </div>
