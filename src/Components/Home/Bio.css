@@ -1,0 +1,131 @@
+.bio {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 50%;
+  background-color: rgb(41, 40, 40);
+  position: absolute;
+  top: -60vh;
+  z-index: 0;
+}
+
+.b-img > img {
+  width: 250px;
+  border-radius: 50%;
+  justify-content: flex-end;
+  z-index: 1000 !important;
+}
+
+.b-img {
+  border-radius: 50%;
+  z-index: 1000 !important;
+  padding: 15px;
+  background-color: black;
+  box-shadow: inset 0 0 5px 1px rgb(0, 0, 0);
+  background: linear-gradient(rgb(39, 39, 39), rgb(7, 7, 7));
+}
+
+.bg-img-wrap {
+  z-index: 100;
+  box-shadow: 0 0 7px 2px rgb(0, 0, 0);
+  margin-top: 15vh;
+  border-radius: 50%;
+}
+
+.info {
+  color: white;
+}
+.info > h1 {
+  color: rgb(105, 104, 105);
+  letter-spacing: 5px;
+  text-align: center;
+}
+.info > h1 > span {
+  color: rgb(66, 67, 68);
+  margin-right: 15px;
+}
+.info > h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  font-weight: 550;
+  letter-spacing: 3px;
+}
+.line {
+  width: 100vw;
+  list-style: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, grey, transparent);
+}
+.info > p {
+  padding: 10px 20vw;
+  text-align: center;
+  font-weight: lighter;
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: whitesmoke;
+}
+.det {
+  padding: 7px;
+  margin: 10px 20px;
+  border-radius: 50%;
+  border-top: 1px solid rgba(68, 66, 66, 0.822);
+  border-left: 1px solid rgba(48, 47, 47, 0.849);
+  background: linear-gradient(rgb(37, 37, 37), black);
+}
+.det > a > img {
+  width: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+.details {
+  color: rgba(255, 255, 255, 0.384);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.det:hover {
+  box-shadow: 0 2px 20px 0px rgba(40, 40, 40, 0.863);
+  transform: scale(1.08);
+  transition: all 0.2s ease-in-out;
+}
+.det > a > p,
+.det > p {
+  color: rgba(255, 255, 255, 0.712);
+}
+.det > a > p:hover,
+.det > p:hover {
+  color: black;
+  font-weight: 600;
+}
+.det > p {
+  margin-right: 90px;
+}
+
+@media (max-width: 500px) {
+  .info > p {
+    padding: 10px 10vw;
+  }
+  .det {
+    padding: 2px;
+    margin: 15px;
+  }
+  .det > a > img {
+    width: 25px;
+  }
+  .bg {
+    height: 60vh;
+    top: -20vh;
+    border-radius: 0%;
+  }
+}
