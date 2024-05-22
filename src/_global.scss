@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "poppins";
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url('./assets/fonts/Poppins-ExtraBold.ttf');
+}
+
+$bg-dark: #1f001a;
+$col-dark: white;
+$font: 'Poppins';
+$font-bold: 'Poppins-bold';
+
+@mixin flex($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+

@@ -1,0 +1,288 @@
+@use 'global';
+
+.App {
+  color: white;
+  @include global.flex(column);
+  min-height: 100vh;
+  transition: 0.3s;
+  & > img {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  nav {
+    position: fixed;
+    z-index: 10;
+    @include global.flex(column);
+    gap: 20px;
+    right: 40px;
+    bottom: 40px;
+    a {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-content: center;
+    }
+    img {
+      width: 25px;
+    }
+    .active {
+      border-radius: 50%;
+      background-color: #270821;
+      padding: 4px;
+      img {
+        filter: brightness(1.5);
+      }
+    }
+  }
+  & > main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, black, #1f001a);
+    @include global.flex(column);
+    h1 {
+      font-size: 70px;
+      font-weight: 900;
+      font-family: global.$font-bold;
+      span {
+        color: #72015f79;
+      }
+    }
+    p {
+      margin-top: -10px;
+      color: #420037;
+      font-size: 24px;
+    }
+    div {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      opacity: 0.7;
+    }
+  }
+  .projects {
+    width: 100vw;
+    position: relative;
+    & > div:first-of-type {
+      position: absolute;
+      top: 0;
+      left: 40px;
+      display: flex;
+      gap: 5px;
+      div {
+        width: 1px;
+        height: 300px;
+        background-color: #833476;
+      }
+      h4 {
+        display: flex;
+        rotate: 90deg;
+        width: 0px;
+        height: 60px;
+        gap: 10px;
+        font-size: 24px;
+        font-weight: 100;
+        margin-top: 50px;
+        color: #fff7fe;
+        p {
+          color: #81818141;
+        }
+        span {
+          color: #833476;
+        }
+      }
+    }
+    .project {
+      width: 80vw;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      main {
+        position: relative;
+        img {
+          max-width: 80vw;
+        }
+        div {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 40%;
+          &:first-of-type {
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, #1f001a, #00000000);
+          }
+          &:last-of-type {
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(180deg, #00000000, #1f001a);
+          }
+        }
+      }
+      & > div {
+        @include global.flex(column);
+        gap: 20px;
+        h1 {
+          font-size: 64px;
+          font-family: global.$font-bold;
+          max-width: 300px;
+          text-align: center;
+          color: #fff7fe;
+        }
+        span {
+          width: 100px;
+          height: 1px;
+          background-color: #893a7c83;
+        }
+        .skills {
+          display: flex;
+          gap: 20px;
+          img {
+            width: 25px;
+          }
+        }
+        .btns {
+          display: flex;
+          gap: 10px;
+          a {
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.AppLight {
+  background-color: #fff6fe;
+  nav {
+    .active {
+      background-color: #e9d9e6;
+    }
+  }
+  & > main {
+    background: linear-gradient(180deg, white, #fff6fe);
+    h1 {
+      color: black;
+      span {
+        color: #e9d9e6;
+      }
+    }
+    div {
+      img {
+        opacity: 0.7;
+      }
+    }
+  }
+  .projects {
+    & > div:first-of-type {
+      div {
+        background-color: #D4A9D2;
+      }
+      h4 {
+        color: #400039;
+        span {
+          color: #D4A9D2;
+        }
+      }
+    }
+    .project {
+      & > main {
+        div {
+          &:first-of-type {
+            background: linear-gradient(180deg, #fff6fe, rgba(255, 255, 255, 0));
+          }
+          &:last-of-type {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff6fe);
+          }
+        }
+      }
+      & > div {
+        h1 {
+          color: #400039;
+        }
+        span {
+          background-color: #40003927;
+        }
+        .skills {
+          img {
+            filter: saturate(100%) hue-rotate(180deg) invert(100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .App {
+    h1 {
+      font-size: 37px !important;
+    }
+    & > img {
+      right: 10px !important;
+    }
+    nav {
+      right: 10px !important;
+      bottom: 10px !important;
+      a {
+        width: 25px !important;
+        height: 25px !important;
+        img {
+          width: 15px !important;
+        }
+      }
+    }
+    & > main {
+      p {
+        font-size: small;
+      }
+      div {
+        img {
+          width: 15px;
+        }
+      }
+    }
+    .projects {
+      & > div:first-of-type {
+        z-index: 10;
+        left: 10px;
+        div {
+          height: 195px;
+        }
+        h4 {
+          font-size: small;
+          height: 30px;
+        }
+      }
+      .project {
+        & > div {
+          .skills {
+            gap: 10px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .btns {
+            a {
+              img {
+                width: 60px;
+                height: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
