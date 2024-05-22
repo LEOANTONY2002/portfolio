@@ -47,19 +47,25 @@
       font-weight: 900;
       font-family: global.$font-bold;
       span {
-        color: #72015f79;
+        color: #5a014ba3;
       }
     }
     p {
       margin-top: -10px;
-      color: #420037;
+      color: #fee4f942;
       font-size: 24px;
     }
     div {
       margin-top: 20px;
       display: flex;
-      gap: 20px;
+      gap: 30px;
       opacity: 0.7;
+      a {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
   }
   .projects {
@@ -173,8 +179,11 @@
     h1 {
       color: black;
       span {
-        color: #e9d9e6;
+        color: #f0d7ec;
       }
+    }
+    p {
+      color: #7d657b68;
     }
     div {
       img {

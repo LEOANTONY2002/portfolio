@@ -61,7 +61,7 @@ export const content = {
         {
             title: "BE YOU ELEGANCE",
             image: BeYouElegance,
-            app: true,
+            app: false,
             figma: "https://www.figma.com/design/N1LYNVGaSYWQlJWlDdKE0n/Be-You-Elegance?node-id=0%3A1&t=KYh26pSlLUhLqriW-1",
             web: "https://beyouelagance.web.app/",
             github: "https://github.com/LEOANTONY2002/beyouelagance",
@@ -70,7 +70,7 @@ export const content = {
         {
             title: "SKILL TRACKER",
             image: SkillTracker,
-            app: true,
+            app: false,
             figma: "https://www.figma.com/design/3QGzF5bu5Bvzhpu9LEQjiU/Skill-Tracker?node-id=0%3A1&t=pL3bsmx4NwIu6W4D-1",
             web: "https://ccxskill.web.app/",
             github: "https://github.com/LEOANTONY2002/SkillTraker",

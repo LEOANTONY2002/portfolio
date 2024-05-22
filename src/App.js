@@ -4,9 +4,11 @@ import BulbOn from "./assets/images/BulbOn.png";
 import BulbOff from "./assets/images/BulbOff.png";
 import Figma from "./assets/images/Figma.png";
 import Web from "./assets/images/Web.png";
+import PlayStore from "./assets/images/PlayStore.png";
 import Github2 from "./assets/images/Github2.png";
 import FigmaL from "./assets/images/FigmaL.png";
 import WebL from "./assets/images/WebL.png";
+import PlayStoreL from "./assets/images/PlayStoreL.png";
 import Github2L from "./assets/images/Github2L.png";
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -80,8 +82,23 @@ function App() {
                 ))}
               </div>
               <div className="btns">
-                <a href={project?.web} target="_blank">
-                  <img src={darkTheme ? Web : WebL} alt="" />
+                <a
+                  href={project?.web}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={
+                      darkTheme && project?.app
+                        ? PlayStore
+                        : !darkTheme && project?.app
+                        ? PlayStoreL
+                        : darkTheme && !project?.app
+                        ? Web
+                        : WebL
+                    }
+                    alt=""
+                  />
                 </a>
                 <a
                   href={project?.figma}
@@ -90,7 +107,11 @@ function App() {
                 >
                   <img src={darkTheme ? Figma : FigmaL} alt="" />
                 </a>
-                <a href={project?.github} target="_blank">
+                <a
+                  href={project?.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={darkTheme ? Github2 : Github2L} alt="" />
                 </a>
               </div>
