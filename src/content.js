@@ -65,7 +65,7 @@ export const content = {
             figma: "https://www.figma.com/design/N1LYNVGaSYWQlJWlDdKE0n/Be-You-Elegance?node-id=0%3A1&t=KYh26pSlLUhLqriW-1",
             web: "https://beyouelagance.web.app/",
             github: "https://github.com/LEOANTONY2002/beyouelagance",
-            skills: [Flutter, ReactNative, NodeJs, Graphql, PostgreSQL, PrismaOrm]
+            skills: [ReactNative]
         },
         {
             title: "SKILL TRACKER",
@@ -74,7 +74,7 @@ export const content = {
             figma: "https://www.figma.com/design/3QGzF5bu5Bvzhpu9LEQjiU/Skill-Tracker?node-id=0%3A1&t=pL3bsmx4NwIu6W4D-1",
             web: "https://ccxskill.web.app/",
             github: "https://github.com/LEOANTONY2002/SkillTraker",
-            skills: [Flutter, ReactNative, NodeJs, Graphql, PostgreSQL, PrismaOrm]
+            skills: [ReactNative, NodeJs, Graphql, PostgreSQL, PrismaOrm]
         }
     ]
 }
