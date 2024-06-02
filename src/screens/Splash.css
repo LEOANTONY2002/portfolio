@@ -22,20 +22,12 @@
 
 .splash > h1 > span {
   animation: span 5s ease-in-out;
-  color: rgb(22, 22, 22);
-}
-
-.splash div {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+  color: #303030;
 }
 
 .splash img {
   filter: saturate(0);
+  position: absolute;
   z-index: -1;
   animation: img 2s ease-in-out forwards;
 }
@@ -48,7 +40,7 @@
 
 @keyframes img {
   to {
-    opacity: 0.1;
+    opacity: 0;
   }
 }
 
@@ -66,7 +58,7 @@
     color: white;
   }
   80% {
-    color: rgb(22, 22, 22);
+    color: #303030;
   }
   /* 100% {
     color: #5a014ba3;
