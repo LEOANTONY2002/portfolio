@@ -55,7 +55,6 @@ export const content = {
             app: true,
             figma: "https://www.figma.com/file/YjjOlSsGndMYnG4nU0YVHE/UVBS?type=design&node-id=0%3A1&mode=design&t=7pGiq1oE7I8vDJhv-1",
             web: "https://play.google.com/store/apps/details?id=com.unitedvbs.uvbs",
-            github: "https://github.com/LEOANTONY2002/uvbsApp",
             skills: [Flutter, ReactNative, NodeJs, Graphql, PostgreSQL, PrismaOrm]
         },
         {

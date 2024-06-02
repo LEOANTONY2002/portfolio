@@ -107,13 +107,13 @@ function App() {
                 >
                   <img src={darkTheme ? Figma : FigmaL} alt="" />
                 </a>
-                <a
+                {project?.github && <a
                   href={project?.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img src={darkTheme ? Github2 : Github2L} alt="" />
-                </a>
+                </a>}
               </div>
             </div>
           </div>
