@@ -30,18 +30,18 @@ function App() {
   return (
     <div className={darkTheme ? "App" : "App AppLight"}>
       <Helmet>
-        <title>Leo Antony - Portfolio</title>
-        <meta name="description" content="Portfolio of Leo Antony, a software developer specializing in design to deployment." />
-        <meta name="keywords" content="Leo Antony, Portfolio, Software Developer, Web Development, Projects" />
+        <title>Leo Antony</title>
+        <meta name="description" content="Artistic Excellence" />
+        <meta name="keywords" content="Leo Antony, Portfolio, Software Developer, Web Development, Projects, leoantony2002" />
         <meta name="author" content="Leo Antony" />
-        <meta property="og:title" content="Leo Antony - Portfolio" />
-        <meta property="og:description" content="Explore the portfolio of Leo Antony, showcasing projects and skills in software development." />
-        <meta property="og:image" content="path/to/preview-image.png" />
-        <meta property="og:url" content="https://your-portfolio-url.com" />
+        <meta property="og:title" content="Leo Antony" />
+        <meta property="og:description" content="Artistic Excellence" />
+        <meta property="og:image" content="./assets/images/logo.png" />
+        <meta property="og:url" content="https://leoantony2002.web.app" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Leo Antony - Portfolio" />
-        <meta name="twitter:description" content="Portfolio of Leo Antony, a software developer specializing in design to deployment." />
-        <meta name="twitter:image" content="path/to/preview-image.png" />
+        <meta name="twitter:title" content="Leo Antony" />
+        <meta name="twitter:description" content="Artistic Excellence" />
+        <meta name="twitter:image" content="./assets/images/logo.png" />
       </Helmet>
       <img
         src={darkTheme ? BulbOff : BulbOn}
