@@ -14,6 +14,7 @@ import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "./redux/appSlice";
 import useOnScreen from "./hooks/useOnScreen";
+import { Helmet } from "react-helmet";
 
 function App() {
   const { darkTheme } = useSelector((state) => state?.app);
@@ -28,10 +29,24 @@ function App() {
 
   return (
     <div className={darkTheme ? "App" : "App AppLight"}>
+      <Helmet>
+        <title>Leo Antony - Portfolio</title>
+        <meta name="description" content="Portfolio of Leo Antony, a software developer specializing in design to deployment." />
+        <meta name="keywords" content="Leo Antony, Portfolio, Software Developer, Web Development, Projects" />
+        <meta name="author" content="Leo Antony" />
+        <meta property="og:title" content="Leo Antony - Portfolio" />
+        <meta property="og:description" content="Explore the portfolio of Leo Antony, showcasing projects and skills in software development." />
+        <meta property="og:image" content="path/to/preview-image.png" />
+        <meta property="og:url" content="https://your-portfolio-url.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Leo Antony - Portfolio" />
+        <meta name="twitter:description" content="Portfolio of Leo Antony, a software developer specializing in design to deployment." />
+        <meta name="twitter:image" content="path/to/preview-image.png" />
+      </Helmet>
       <img
         src={darkTheme ? BulbOff : BulbOn}
         onClick={() => dispatch(toggleTheme())}
-        alt=""
+        alt="Toggle Theme"
       />
       <nav>
         {content?.nav?.map((nav, index) => (
@@ -41,7 +56,7 @@ function App() {
             href={nav?.link}
             key={index}
           >
-            <img src={nav?.icon} alt="" />
+            <img src={nav?.icon} alt={nav?.title || "Navigation Icon"} />
           </a>
         ))}
       </nav>
@@ -52,8 +67,8 @@ function App() {
         <p>Software Developer</p>
         <div>
           {content?.contact?.map((contact, index) => (
-            <a href={contact?.link} target="_blank" key={index}>
-              <img src={contact?.icon} alt="" />
+            <a href={contact?.link} target="_blank" key={index} rel="noopener noreferrer">
+              <img src={contact?.icon} alt={contact?.name || "Contact Icon"} />
             </a>
           ))}
         </div>
@@ -61,16 +76,16 @@ function App() {
       <section id="projects" className="projects">
         <div>
           <div></div>
-          <h4>
+          <h1>
             DESIGN <p>TO </p>
             <span>DEPLOY</span>
-          </h4>
+          </h1>
         </div>
         {content?.projects?.map((project, index) => (
           <div key={index} className="project">
             <main>
               <div></div>
-              <img src={project?.image} alt="" />
+              <img src={project?.image} alt={project?.title || "Project Image"} />
               <div></div>
             </main>
             <div>
@@ -78,7 +93,7 @@ function App() {
               <span></span>
               <div className="skills">
                 {project?.skills?.map((skill, index) => (
-                  <img key={index} src={skill} alt="" />
+                  <img key={index} src={skill} alt={skill?.name || "Skill Icon"} />
                 ))}
               </div>
               <div className="btns">
@@ -97,7 +112,7 @@ function App() {
                         ? Web
                         : WebL
                     }
-                    alt=""
+                    alt="Web/App Link"
                   />
                 </a>
                 <a
@@ -105,14 +120,14 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={darkTheme ? Figma : FigmaL} alt="" />
+                  <img src={darkTheme ? Figma : FigmaL} alt="Figma Link" />
                 </a>
                 {project?.github && <a
                   href={project?.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={darkTheme ? Github2 : Github2L} alt="" />
+                  <img src={darkTheme ? Github2 : Github2L} alt="GitHub Link" />
                 </a>}
               </div>
             </div>
